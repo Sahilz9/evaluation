@@ -133,7 +133,7 @@ body {
 .generate-button {
   position: absolute;
   padding: 12px 18px;
-  margin: 10px 0 0 -9em;
+  margin: 10px 0 0 -8.7em;
   background-color: rgb(123, 15, 255);
   color: white;
   border-radius: 10px;
@@ -149,7 +149,7 @@ body {
   padding: 60px 0 0 0 50px;
   width: 1300px;
   height: auto;
-  margin: 10em 0 0 25em;
+  margin: 8em 0 0 25em;
 }
 
 .feature-container > div > div {
@@ -161,6 +161,7 @@ body {
 .feature-container > div > header > h3 {
   color: rgb(115, 38, 239);
   font-size: 18.72px;
+  margin-bottom: 1em;
 }
 
 .feature-container > div > header > h2 {
@@ -184,6 +185,7 @@ body {
 .feature-container > div > div > div > span {
   color: rgb(200, 200, 200);
   font-size: 15.2px;
+  line-height: 20px;
 }
 
 .feature-container > div > div > div > button {
@@ -227,17 +229,40 @@ body {
   font-size: 13px;
 }
 
+/* rating section */
+
+.rating-container > div {
+  display: flex;
+  margin: 4em 0 0 43em;
+  gap: 20px;
+}
+
+.rating-container > div > span {
+  color: rgb(161, 161, 161);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.rating-star {
+  color: #00b67a;
+}
+
+.rating-image {
+  height: 25px;
+  width: 70px;
+}
+
 /* pricing section */
 
 .pricing-container {
   display: flex;
   width: auto;
   height: auto;
-  margin: 10em 0 0 21em;
+  margin: 10em 0 0 26em;
 }
 
 .pricing-container > div {
-  margin: 0 0 0 4em;
+  margin: 0 0 0 0;
 }
 
 .pricing-container > div > header > h3 {
@@ -385,6 +410,11 @@ input:checked + .slider:before {
   line-height: 30px;
 }
 
+.check-list > div > ul > li > svg {
+  margin: 0 1em 0 0;
+  font-size: 20px;
+}
+
 .started-button > button {
   color: white;
   background-color: rgb(117, 47, 234);
@@ -397,21 +427,69 @@ input:checked + .slider:before {
   margin-top: 40px;
 }
 
-/* .second-box {
-  border: 1px solid rgb(59, 59, 59);
-  border-radius: 10px;
-} */
+.main-second-box {
+  padding: 14em 0 0 0;
+}
+
+.second-box {
+  border-top: 1px solid rgb(59, 59, 59);
+  border-right: 1px solid rgb(59, 59, 59);
+  border-bottom: 1px solid rgb(59, 59, 59);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 440px;
+  width: 400px;
+  padding: 25px 25px;
+}
+
+.basic-list {
+  color: rgb(161, 161, 161);
+  list-style-type: none;
+  margin: 1em 0 0 0;
+}
+
+.basic-list > li {
+  font-size: 15.2px;
+  line-height: 35px;
+}
+
+.basic-button {
+  padding: 12px 13px;
+  margin: 2.5em 0 0 0;
+  width: 334px;
+  background-color: black;
+  color: white;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid rgb(48, 48, 48);
+}
+
+.basic-button:hover {
+  border: 1px solid rgb(147, 80, 255);
+  transition: 0.2s;
+}
+
+/* footer */
 
 footer {
   height: auto;
   width: auto;
   background-color: #111316;
-  margin: 4em 0 0 0;
+  margin: 7em 0 0 0;
   padding: 25px 25px;
+
+  border-top: 1px solid rgb(34, 34, 34);
 }
 
 .icons {
   color: rgb(161, 161, 161);
+  margin: 1em 0 1em 0;
+}
+
+.icons > svg {
+  margin-left: 10px;
 }
 
 .feature-list {
@@ -431,4 +509,32 @@ footer > div > div {
   display: flex;
   justify-content: space-evenly;
   gap: 60px;
+  list-style-type: none;
+}
+
+.main-list > li > ul {
+  margin: 10px 0 0 0;
+}
+
+.main-list > li > ul > li {
+  font-weight: 500;
+  font-size: 14.4px;
+  line-height: 30px;
+}
+
+.footer-img {
+  margin: 1em 0 0 0;
+}
+
+.made-with {
+  text-align: center;
+  margin: 3em 0 0 0;
+}
+
+.last {
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  padding: 6px 9px 6px 9px;
+  border-radius: 6px;
 }
