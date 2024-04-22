@@ -520,6 +520,11 @@ footer > div > div {
   font-weight: 500;
   font-size: 14.4px;
   line-height: 30px;
+  cursor: pointer;
+}
+
+.main-list > li > ul > li:hover {
+  text-decoration: underline;
 }
 
 .footer-img {
